@@ -1,0 +1,60 @@
+/* ¯\_(ツ)_/¯ */
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* chia các phần từ bên trong thành 2 cột */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px;
+  align-items: center;
+}
+/* chia các phần tử bên trong thành 2 cột bằng nhau */
+.grid-container-same-width{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+}
+/* */
+.grid-container select{
+  font-size: inherit;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.flexbox-space-evenly{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.last-item{
+  margin-left: auto;
+}
+
+.center {
+  Display: flex; 
+  Justify-content: center; 
+  Align-items: center;
+}
+.my-form {
+  border: black solid 1px;
+  padding: 5px;
+  width: fit-content;
+}
+
+/* negative margin */
+.my-ms-n {
+  margin-left: -2.4rem !important;
+}
